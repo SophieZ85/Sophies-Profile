@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<h1>&#9925
+  <br>
+  <style>
+    h1 {
+      text-align: center;
+      color: #1A64DB;
+      font-size: 30px;
+      margin: 0;
+    }
+  </style>
+  Currently 21&deg; In Tokyo
+</h1>
+<h2>
+  <style>
+    h2{
+      text-align: center;
+      font-size: 27px;
+      display: block;
+    }
+    </style>
+  13&deg;/<strong>23&deg;</strong>
+</h2>
+<h3>
+  &#127783; 
+  <style>
+    h3{
+      text-align: center;
+      font-size:30px;
+      display: block;
+      margin: 0 auto;
+      padding: 15px;
+      max-width: 400px;
+      background:#FFFFFF ;
+      border-radius: 10px 30px 10px;
+      transition: 100 ease-in;
+    }
+    h3:hover{
+      background: #FFFBEF;
+      border-radius: 30px;
+    }
+  </style>Tomorrow<div>
+  10&deg;/22&deg;
+</h3>
+<h4>
+  &#127781;
+  <style>
+  h4{
+    text-align: center;
+    font-size:30px ;
+    display: block;
+     margin: 0 auto;
+      padding: 15px;
+      max-width: 400px;
+      background:#FFFFFF;
+      border-radius: 10px 30px 10px;
+      transition: 100 ease-in;
+  } 
+  h4:hover {
+    background: #FFFBEF;
+    border-radius: 30px;
+  }
+  </style>Saturday<div>
+    15 &deg;/<strong>17 &deg;</strong>
+  </div>
+</h4>
+<h5>
+&#9728;&#65039;
+  <style>
+    h5{
+      text-align: center;
+      font-size: 30px;
+      display: block;
+     margin:  0 auto;
+      padding: 15px;
+      max-width: 400px;
+      background:#FFFFFF;
+      border: radius 10px 30px 10px;
+      transition: 100 ease-in;
+    }
+    h5:hover{ 
+      background: #FFFBEF;
+      border-radius: 30px;
+    }
+  </style>Sunday<div>
+    25&deg;/<strong>28&deg;</strong>
+  </div>
+</h5>
+<br />
+<br />
+<br />
+<br />
+<button>
+  <style>
+    button{
+      color:aquamarine;
+      background:blueviolet;
+      padding:40px;
+      display:block;
+      margin: 0 auto;
+      border: 3px solid #1A64D6;
+      transition:all 4s ease;
+
+    }
+    button:hover{
+      color: blueviolet;
+      background:white;
+     cursor: pointer;}
+  </style>
+  Change city</button>
+    <script>
+function changeCity(){
+  let city=prompt("What city you live in?");
+  let temperature=prompt("What temperature is it?");
+  let h1=document.querySelector("h1");
+if(temperature<0){
+  h1.innerHTML=
+  "&#129398;<br />Currently "+temperature +"&deg; C In " +city;
+} else{
+  h1.innerHTML=
+  "&#128512;<br />Currently "+temperature + "&deg; C In " +city;
+}
+}
+  let changeCityButton=document.querySelector("button");
+  changeCityButton.addEventListener("click", changeCity);
+    </script>
+
+  
+    <p> Coded by Sofya Zvereva</P>

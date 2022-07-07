@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophie's Artistic Paradise</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 45px;
+        font-weight: normal;
+        color: #8a1253;
+      }
+      h2 {
+        text-align: center;
+        font-family: cursive;
+        padding: 10px;
+        font-size: 20px;
+        color: #27296d;
+        border: solid #27296d;
+        border-radius: 2px;
+      }
+      img {
+        display: block;
+        max-width: 90%;
+        border: #8a1253;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+      p {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 27px;
+        color: #070f4e;
+        line-height: normal;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: normal;
+        color: #070f4e;
+        border: 1px solid #8a1253;
+        border-radius: 10px;
+        padding: 15px 20px;
+        background: aqua;
+        transition: all 3s linear;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #070f4e;
+        color: aqua;
+      }
+      h3 {
+        font-size: 15px;
+        text-align: center;
+        color: #8a1253;
+      }
+    </style>
+    <h1>Welcome to Sophie's Art World</h1>
+    <h2><em>Every artist is welcome here</em></h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/508/original/IMG_20191113_214707_153_%281%29.jpg?1654537324"
+      width="790px;"
+    />
+    <p>
+      Hey fellow creative minds, this my own personal project. I have been an
+      artist since I was young<br />
+      I glad I learned coding, this is my first attempt at creating something
+      just for me and other fellow artists to share their work. <br />
+      Digital or traditional all are welcome. I know alot of Websites have
+      artists display their work but it gets overlooked often and that is unfair
+      to the artist who had tried their best and put their heart and soul into
+      their art.<br />
+      Art forms are being replaced by social media like tiktok and instagram,
+      now while nothing against that, this website is designed to specifically
+      display artwork that is overlooked and doesnt focus on popularity and
+      likes
+      <br />
+      <a href="https://www.instagram.com/sachikoshinozaki588/" target="_blank"
+        >See more of my art</a
+      >
+    </p>
+    <h3>
+      <em> The picture is something I had made on my tablet</em>
+    </h3>
+    <br />
+    <button>Join the Art World</button>
+    <script>
+      function joinArt() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        let h1 = document.querySelector("h1");
+        if (age < 16) {
+          h1.innerHTML = "Hello " + name + " You need parental permission";
+        } else {
+          h1.innerHTML = " Hello " + name + " Welcome to Art Paradise!";
+        }
+      }
+      let joinButton = document.querySelector("button");
+      joinButton.addEventListener("click", joinArt);
+    </script>
+    <br />
+    <br />
+    This page was made by Sofya Zvereva
+  </body>
+</html>
